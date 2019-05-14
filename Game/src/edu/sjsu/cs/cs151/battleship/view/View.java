@@ -285,7 +285,24 @@ public class View extends Thread{
 	{
 		return new View(queue);
 	}
-
+/**
+	 * Inner class for the game start action listener 
+	 *
+	 */
+	private class GameStartListener implements ActionListener{
+		@Override 
+		public void actionPerformed(ActionEvent e) {
+			try {
+				Welcome welcome = new Welcome();
+				welcome.getFrame().dispose();
+				queue.put(new NewGameMessage());
+			}
+			catch (InterruptedException exception) {
+				exception.printStackTrace();
+			}
+		}
+		
+	}
 	public JPanel getWestPanel()
 	{
 		return West;
