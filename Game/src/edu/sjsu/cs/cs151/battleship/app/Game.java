@@ -23,7 +23,7 @@ public class Game
 		{
 			e.printStackTrace();
 		}
-		view.dispose();
+		view.playerFrame.dispose();
 		queue.clear();
 	}
 	

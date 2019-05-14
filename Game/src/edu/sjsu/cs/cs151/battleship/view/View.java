@@ -46,12 +46,6 @@ public class View extends Thread{
 		playerFrame.getContentPane().add(North, BorderLayout.NORTH);
 		North.setLayout(null);
 
-		//		nextPlayerButton = new JButton("NEXT PLAYER");
-		//		nextPlayerButton.setBounds(363, 17, 112, 23);
-		//		nextPlayerButton.setFont(new Font("Bahnschrift", Font.PLAIN, 12));
-		//		nextPlayerButton.setForeground(new Color(255, 102, 51));
-		//		North.add(nextPlayerButton);
-
 		JLabel scoreLabel = new JLabel("Score:");
 		scoreLabel.setFont(new Font("Bahnschrift", Font.PLAIN, 11));
 		scoreLabel.setBounds(20, 56, 33, 14);
