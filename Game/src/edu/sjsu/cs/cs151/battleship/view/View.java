@@ -24,17 +24,19 @@ import javax.swing.SwingConstants;
 
 import edu.sjsu.cs.cs151.battleship.controller.GameInfo;
 import edu.sjsu.cs.cs151.battleship.controller.Message;
+import edu.sjsu.cs.cs151.battleship.controller.NewGameMessage;
 
 import javax.swing.JTextField;
 import javax.swing.JRadioButton;
 
 public class View extends Thread{
-
+	BlockingQueue<Message> queue;
 	/**
 	 * Constructor.
 	 */
 	public View(BlockingQueue<Message> queue)
 	{
+		this.queue = queue;
 		playerFrame = new JFrame("Battleships");
 		playerFrame.setBounds(0, 0, 500, 500);
 		playerFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
