@@ -56,7 +56,7 @@ public class Controller {
 	}
 
 	/**
-	 * 
+	 * Updates the game info.
 	 */
 	public void updateGameInfo()
 	{
